@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer"/>
+    <meta name="description" content="ETan SFIT">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/csivit.jpeg">
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+    font-family: sf;
+    src: url("AvantGardeBookBT.ttf");
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/7c64fa9aba.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>E-TAN Homepage</title>
+</head>
+
+<body>
+   <section style="width: 100%; height:100vh;">
+    <video autoplay muted loop id="myVideo">
+        <source src="img/back.mp4" type="video/mp4">
+    </video>
+    <nav class="nav" style="z-index: 10000;">
+        <div class="container">
+            <div id="mainListDiv" class="main_list" >
+                <ul class="navlinks" style="overflow-y: hidden;" >         
+                    <li><a href=".\" style="color:#00fff3">Home</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="hero" style="z-index: 10;">
+        <h1 class="typing-demo">ETan</h1>
+        <h3>EXTC's Tech Application Network</h3>
+        <div class="icons">
+            <a href="https://www.instagram.com/etan_sfit/" target="_blank" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/etan-sfit-54b63331a" target="_blank" id="linked"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="img">
+        <style>
+            body {
+              background-image:linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(33, 29, 32, 0.73)), url('team.jpg');
+              background-repeat: no-repeat;
+              background-attachment: scroll;
+              background-size: 100% 100%;
+            }
+            </style>
+    </div>
+   </section>
+ 
+   <section class="about">
+    <h1>ABOUT US</h1>
+    <div class="grid">
+        <div class="one">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2340.1301685088188!2d72.85244279895595!3d19.24248841238589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.%20Francis%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1721728640558!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="two">
+            <p style="font-family: sf;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui sit fugit, distinctio vero minus eos adipisci voluptatem? Rerum explicabo neque repudiandae quaerat recusandae temporibus provident, aut eligendi veritatis tempora?
+                <br>
+                <br>
+                <a href="mailto:etan@sfit.ac.in"><i class="far fa-envelope"></i> etan@sfit.ac.in</a>
+            </p>
+        </div>
+    </div>
+   </section>
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="main1.js"></script>
+          <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+</body>
+</html>
