@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ETan - EXTC's Tech Application Network</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <meta name="description" content="SFIT-ETan" />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/home/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -22,6 +22,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="./html/team.html">Teams</a></li>
+            <li><a href="./html/events.html">Events</a></li>
           </ul>
         </nav>
       </div>
@@ -29,7 +31,9 @@
 
     <section class="hero">
       <div class="hero-content">
-        <h1>ETan</h1>
+        <div class="logo-container">
+          <img src="./assets/home/font.svg" alt="ETan Logo" class="logo" />
+        </div>
         <h3>EXTC's Tech Application Network</h3>
       </div>
     </section>
@@ -42,7 +46,7 @@
       </h2>
       <div class="container">
         <div class="logo-container">
-          <img src="./assets/logo.png  " alt="ETan Logo" />
+          <img src="./assets/home/logo.webp" alt="ETan Logo" />
         </div>
         <p>
           ETan is EXTC's Tech Application Network, dedicated to exploring and
@@ -62,17 +66,17 @@
         <div class="carousel-container">
           <div class="carousel">
             <img
-              src="./assets/image1.webp"
+              src="./assets/home/gallery1.webp"
               alt="Image 1"
               class="carousel-image"
             />
             <img
-              src="./assets/image2.webp"
+              src="./assets/home/gallery2.webp"
               alt="Image 2"
               class="carousel-image"
             />
             <img
-              src="./assets/image3.webp"
+              src="./assets/home/gallery3.webp"
               alt="Image 3"
               class="carousel-image"
             />
@@ -107,16 +111,25 @@
                 href="https://www.instagram.com/etan_sfit/"
                 target="_blank"
                 id="insta"
-                ><i class="fab fa-instagram"></i> Instagram</a
+                ><i class="fab fa-instagram"></i>ETAN_SFIT</a
+              >
+              <a href="https://github.com/ETan-SFIT" target="_blank" id="github"
+                ><i class="fab fa-github"></i> ETan-SFIT</a
+              >
+              <a href="mailto:etan@sfit.ac.in" target="_blank" id="mail"
+                ><i class="far fa-envelope"></i> etan@sfit.ac.in</a
+              >
+              <a
+                href="https://www.linkedin.com/company/etan-sfit/"
+                target="_blank"
+                id="linked"
+                ><i class="fab fa-linkedin-in"></i>ETAN-SFIT (Company)</a
               >
               <a
                 href="https://www.linkedin.com/in/etan-sfit-54b63331a"
                 target="_blank"
                 id="linked"
-                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-              >
-              <a href="mailto:etan@sfit.ac.in" class="email-link"
-                ><i class="far fa-envelope"></i> etan@sfit.ac.in</a
+                ><i class="fab fa-linkedin-in"></i>ETAN-SFIT (User)</a
               >
             </div>
           </div>
@@ -127,15 +140,20 @@
       <div class="container">
         <hr />
         <p><strong>ETan - EXTC's Tech Application Network</strong></p>
-        <p>&copy; 2024 All rights reserved.</p>
+
         <p>
-          Designed by
+          Designed By
+          <a href="https://www.github.com/skinatro" style="color: turquoise"
+            ><strong>Mirage</strong></a
+          >
+          And Co- Maintained By
           <a
-            href="https://www.linkedin.com/in/om-kate-29232a15a"
+            href="https://in.linkedin.com/in/ayushmaurya1"
             style="color: turquoise"
-            ><strong>Om Kate</strong></a
+            ><strong>Ayush Maurya</strong></a
           >
         </p>
+        <p>&copy; 2024 All rights reserved.</p>
       </div>
     </footer>
     <script>
@@ -170,7 +188,7 @@
         updateCounter();
 
         // Automatic slideshow
-        setInterval(nextImage, 2000); // Change image every 5 seconds
+        setInterval(nextImage, 2000);
 
         // Mobile menu toggle
         const menuToggle = document.querySelector(".mobile-menu-toggle");
