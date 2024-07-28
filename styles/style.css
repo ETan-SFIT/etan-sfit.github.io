@@ -309,3 +309,7 @@ body {
     text-align: center;
   }
 }
+
+#vanta-bg{
+  position:static !important;
+}

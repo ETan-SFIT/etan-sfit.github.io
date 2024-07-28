@@ -99,3 +99,7 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+#vanta-bg{
+  position:static !important;
+}
