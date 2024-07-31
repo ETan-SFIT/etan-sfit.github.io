@@ -47,30 +47,45 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("./../assets/home/hero.webp");
+  background-image: url("./../assets/home/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-start; 
   color: #4a96f9;
   text-align: center;
-  padding-top: 50px;
-  padding-left: 95px ;
+  padding-top: 50px; 
   position: relative;
   z-index: 1;
-  animation: typing 2s steps(35) cursor .4s step-end infinite alternate;
 }
-@keyframes cursor{
-  50% { border-color: transparent;}
-}
-@keyframes typing{
-  from {width: 0 ;}
-}
+
 .hero-content {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 15px;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  max-width: 10 00px;
+  width: 100%;
+  height: auto;
+  max-height: 155px;
+  object-fit: contain;
+}
+
+.side-image {
+  max-width: 100px;
+  height: auto;
+  margin: 0 20px; /
 }
 
 .hero h3 {
@@ -78,6 +93,20 @@ body {
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+.logo-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-height: 155px;
+  object-fit: contain;
+}
+
 
 .about {
   background-color: turquoise;
@@ -117,20 +146,7 @@ body {
   text-align: right;
 }
 
-@media (max-width: 768px) {
-  .about .container {
-    flex-direction: column;
-  }
 
-  .about .logo-container {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .about p {
-    text-align: center;
-  }
-}
 
 .gallery {
   background-color: white;
@@ -261,22 +277,6 @@ body {
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-  .contact-content {
-    flex-direction: column;
-  }
-
-  .map {
-    flex-basis: auto;
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-
-  .contact-info {
-    flex-basis: auto;
-  }
-}
-
 .mobile-menu-toggle {
   display: none;
   background: none;
@@ -284,6 +284,17 @@ body {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .logo {
+      max-width: 400px;
+      max-height: 124px;
+  }
+  
+  .side-image {
+      max-width: 80px;  
+  }
 }
 
 @media (max-width: 768px) {
@@ -319,8 +330,61 @@ body {
     margin: 10px 0;
     text-align: center;
   }
+
+  .hero {
+    padding-top: 70px;  
+    background-size: auto 100vh;
+    animation: moveBackground 7s linear infinite alternate;
 }
 
-#vanta-bg{
-  position:static !important;
+.logo-container {
+    max-width: 300px;
 }
+
+.logo {
+  max-width: 300px;
+  max-height: 93px;
+  margin: 10px 0;
+}
+
+
+.hero h3 {
+    font-size: 1.4rem;
+}
+.about .container {
+  flex-direction: column;
+}
+
+.about .logo-container {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.about p {
+  text-align: center;
+}
+.contact-content {
+  flex-direction: column;
+}
+
+.map {
+  flex-basis: auto;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  flex-basis: auto;
+}
+
+.side-image {
+  max-width: 60px;
+  margin: 5px 0;
+}
+
+@keyframes moveBackground {
+  0% { background-position: left center; }
+  100% { background-position: right center; }
+}
+}
+
