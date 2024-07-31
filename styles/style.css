@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -50,16 +53,18 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff;
+  align-items: flex-start;
+  color: #1794e2;
   text-align: center;
+  padding-top: 50px;
+  padding-left: 95px ;
   position: relative;
   z-index: 1;
 }
 
 .hero-content {
   max-width: 800px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .hero h3 {

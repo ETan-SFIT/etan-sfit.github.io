@@ -55,7 +55,7 @@ h2 {
 }
 
 .team-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(29, 28, 28, 0.816);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -65,7 +65,7 @@ h2 {
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-25px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
