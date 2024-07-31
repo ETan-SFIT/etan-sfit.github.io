@@ -93,6 +93,9 @@ h2 {
   color: #40e0d0;
   font-size: 0.9rem;
 }
+.member-social {
+  color: darkgrey;
+}
 
 @media (max-width: 768px) {
   .events-grid {
