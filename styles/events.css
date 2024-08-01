@@ -28,7 +28,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%vh;
   margin: 0 auto;
   padding: 50px 20px;
 }
