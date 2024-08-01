@@ -22,13 +22,13 @@ html {
 }
 
 #vanta-bg {
-  position:static;
+  position:static !important;
   height: 100vh;
   width: 100vw;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%vh;
   margin: 0 auto;
   padding: 50px 20px;
 }
@@ -109,14 +109,13 @@ h2 {
 .event-card {
   position: relative;
   overflow: hidden;
-
-
+}
 
 .insta {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: gray;
+  background-color: blue;
   border-radius: 50%;
   padding: 10px;
   color: white;
@@ -130,4 +129,8 @@ h2 {
 
 .insta:hover {
   background-color: darkgray;
+}
+
+#vanta-bg{
+  position:static !important;
 }
