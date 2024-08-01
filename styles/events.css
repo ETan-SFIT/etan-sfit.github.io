@@ -131,3 +131,7 @@ h2 {
 .insta:hover {
   background-color: darkgray;
 }
+
+#vanta-bg{
+  position:static !important;
+}
