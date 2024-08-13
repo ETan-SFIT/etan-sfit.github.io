@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+    padding: px 0;
     z-index: 1000;
   }
 
@@ -27,13 +27,15 @@
     display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   .header nav ul li {
     margin: 0 15px;
   }
 
-  .header nav ul li a {
+  .header nav ul li a, button {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -41,7 +43,7 @@
     transition: color 0.3s ease;
   }
 
-  .header nav ul li a:hover {
+  .header nav ul li a:hover button:hover {
     color: turquoise;
   }
 
@@ -334,7 +336,7 @@
       padding-top: 37px;  
       background-size: auto 100vh;
       animation: moveBackground 7s linear infinite alternate;
-  }
+   }
 
   .logo-container {
       max-width: 200px;
@@ -387,3 +389,41 @@
   }
   }
 
+.popup{
+  width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button{
+  width: 100%;
+  margin-top: 50px ;
+  padding: 10px 0;
+  background: turquoise;
+  border: 0;
+  outline: none;
+  font: size 18px; ;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

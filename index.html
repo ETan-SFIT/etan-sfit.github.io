@@ -15,6 +15,9 @@
             <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
             <nav>
                 <ul>
+                    <li><a href="#">
+                        <button type="menu" class="mobile-menu-toggle" onclick="openPopup()">Register for E-TAN</button>
+                    </a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -25,8 +28,11 @@
             </nav>
         </div>
     </header>
-
     <section class="hero">
+                    <div class="popup" id="popup">
+                        <h2>Not an E-TAN member?</h2>
+                        <button type="button" onclick="closePopup()">Register?</button>
+                    </div>
         <div class="hero-content">
             <div class="logo-container">
                 <img loading="lazy" src="./assets/home/logo.webp" alt="E-TAN Logo" class="side-image left-image" />
@@ -171,6 +177,13 @@
                 nav.classList.toggle("open");
             });
         });
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
     </script>
 </body>
 </html>
