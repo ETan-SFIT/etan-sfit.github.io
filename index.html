@@ -30,8 +30,10 @@
     </header>
     <section class="hero">
                     <div class="popup" id="popup">
-                        <h2>Not an E-TAN member?</h2>
-                        <button type="button" onclick="closePopup()">Register?</button>
+                        <h2>Become E-TAN Member?</h2>
+                        <button type="button" onclick="linkPopup()">Register to ETAN</button>
+                        <button type="button" onclick="fileupload()">Upload you payment file here</button>
+                        <button type="button" onclick="closePopup()">Cancel</button>
                     </div>
         <div class="hero-content">
             <div class="logo-container">
@@ -180,6 +182,12 @@
         let popup = document.getElementById("popup");
         function openPopup(){
             popup.classList.add("open-popup")
+        }
+        function linkPopup(){
+            window.location.href="https://sfiterp.sfit.co.in:98/SFIToPayment.asp?id=0B0D337E"
+        }
+        function fileupload(){
+            window.location.href="https://drive.google.com/drive/folders/1KmyvaTue69BBsEQDsc-Tfg2gq6hkv-vN?usp=sharing"
         }
         function closePopup(){
             popup.classList.remove("open-popup")
