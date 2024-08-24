@@ -37,8 +37,9 @@
     </header>
     <section class="hero">
       <div class="popup" id="popup">
-        <h2>Become E-TAN Member?</h2>
-        <button type="button" onclick="linkPopup()">Register to ETAN</button>
+        <h2><strong>Become E-TAN Member?</strong></h2>
+        <button type="button" onclick="perkofmember()">Don't know the perks of E-TAN member?<br><strong>Click here!</strong></button>
+        <button type="button" onclick="linkPopup()">Register to <strong>E-TAN</strong></button>
         <button type="button" onclick="fileupload()">
           Upload your payment proof here
         </button>
@@ -276,16 +277,17 @@
         popup.classList.add("open-popup");
       }
       function linkPopup() {
-        window.location.href =
-          "https://sfiterp.sfit.co.in:98/SFIToPayment.asp?id=0B0D337E";
+        window.open('https://sfiterp.sfit.co.in:98/SFIToPayment.asp?id=0B0D337E', '_blank')
       }
       function fileupload() {
-        window.location.href =
-          "https://drive.google.com/drive/folders/1KmyvaTue69BBsEQDsc-Tfg2gq6hkv-vN?usp=sharing";
+        window.open('https://drive.google.com/drive/folders/1KmyvaTue69BBsEQDsc-Tfg2gq6hkv-vN?usp=sharing', '_blank')
       }
       function closePopup() {
         popup.classList.remove("open-popup");
       }
+      function perkofmember() {
+        window.open('https://drive.google.com/file/d/18Y83g0oLOwQbO-H3YIa55w19EjmInd_l/view?usp=drive_link', '_blank');
+          }
     </script>
   </body>
 </html>
