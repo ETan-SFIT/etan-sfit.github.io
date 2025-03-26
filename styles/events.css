@@ -27,13 +27,25 @@ html {
   width: 100vw;
 }
 
+.read-more-btn{
+  color:#0984e3;
+}
+
+.read-more-text{
+  display: none;
+}
+
+.read-more-text--show{
+  display: inline;
+}
+
 .container {
   max-width: 100vh;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-h1 {
+h1{
   text-align: center;
   color: white;
   font-size: 2.5rem;
@@ -97,7 +109,7 @@ h2 {
   color: #40e0d0;
   font-weight: bold;
   font-size: 0.9rem;
-  padding: 10px 20px;
+  padding: 15px 30px;
 }
 
 .event-card {
@@ -117,11 +129,24 @@ h2 {
   text-decoration: none;
 }
 
-.insta i {
+.drive{
+  color: white;
+  background-color: rgba(0, 0, 255, 0);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.insta i,
+.drive {
   color: white;
 }
 
-.insta:hover {
+.insta:hover{
   background-color: darkgray;
 }
 
