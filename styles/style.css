@@ -63,7 +63,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("./../assets/home/hero.webp");
+  background-image: url("./../assets/home/main.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ body {
 }
 
 .about {
-  background-color: turquoise;
+  background-color: #5ad3e0;
   padding: 80px 0;
   color: #333;
 }
